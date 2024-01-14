@@ -47,8 +47,6 @@ for house_name, house_link in houselink_list:
             race_data['rank'] = driver.find_element(By.XPATH, f'//*[@id="contents"]/div[5]/div/table/tbody/tr[{i}]/td[12]').text
             race_data['distance'] = driver.find_element(By.XPATH, f'//*[@id="contents"]/div[5]/div/table/tbody/tr[{i}]/td[15]').text
             race_data['rank_dis'] = driver.find_element(By.XPATH, f'//*[@id="contents"]/div[5]/div/table/tbody/tr[{i}]/td[19]').text
-            # 以下、必要に応じて他のデータ項目を追加
-            # ...
 
             # 取得したレースのデータをリストに追加
             horse_races.append(race_data)
